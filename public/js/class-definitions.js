@@ -264,6 +264,7 @@
  *
  */
 
+  const scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
 
 /* Step 19
  *
