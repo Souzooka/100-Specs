@@ -495,6 +495,13 @@
  *
  */
 
+  function purchaseLaptop(laptop) {
+    if (laptopCosts[laptop] === undefined) {
+      return -1;
+    } else {
+      return String(laptopCosts[laptop]);
+    }
+  }
 
 /* Step 29
  *
