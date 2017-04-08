@@ -5,7 +5,7 @@
  *
  */
 
-const unicorn = null;
+ const unicorn = null;
 
 /* Step 2
  *
@@ -14,6 +14,7 @@ const unicorn = null;
  *
  */
 
+  const videogame_system = 'Atari';
 
 /* Step 3
  *
