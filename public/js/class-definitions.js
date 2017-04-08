@@ -433,6 +433,14 @@
  *
  */
 
+  function favoritePlanet(planet) {
+    const randomNum = Math.round(Math.random() * 7);
+    if (planets.indexOf(planet) === -1) {
+      return `${planet} is not a planet!`;
+    } else {
+      return `I'm from ${planet}, but I wish I could go to ${planets[randomNum]}.`;
+    }
+  }
 
 /* Step 27
  *
