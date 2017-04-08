@@ -1389,7 +1389,7 @@ var forwardDriving = new Vehicle("", "").drive();
  * and assign the values to each variable below.
  *
  */
-var decagon = new Shape(10).getType();
+var decagon = new Shape(012).getType();
 var polygon = new Shape([3, 4]).getType();
 
 
@@ -1419,8 +1419,8 @@ var closeAnOpenDoor = new Door(01).openClose();
  * and assign the values to each variable below.
  *
  */
-var redShoesSize7;
-var blackShoesSize10;
+var redShoesSize7 = new Shoe(7, 'red').findShoes();
+var blackShoesSize10 = new Shoe(0b1010, 'black').findShoes();
 
 
  /* Step 97
