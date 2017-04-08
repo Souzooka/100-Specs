@@ -5,6 +5,7 @@
  *
  */
 
+const unicorn = null;
 
 /* Step 2
  *
