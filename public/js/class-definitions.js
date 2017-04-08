@@ -284,6 +284,14 @@
  *
  */
 
+  const beers = {
+    IPA         : 'Ale',
+    Lager       : 'Strong',
+    Heffeweisen : 'German',
+    Stout       : ['Thick', 'Dark'],
+    Porter      : 'Bitter',
+    Ale         : ['Light', 'Golden']
+  };
 
 /* Step 20
  *
