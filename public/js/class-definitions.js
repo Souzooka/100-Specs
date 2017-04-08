@@ -1419,8 +1419,8 @@ var closeAnOpenDoor = new Door(01).openClose();
  * and assign the values to each variable below.
  *
  */
-var redShoesSize7 = new Shoe(7, 'red').findShoes();
-var blackShoesSize10 = new Shoe(0b1010, 'black').findShoes();
+var redShoesSize7 = new Shoe(0b111, 'red').findShoes();
+var blackShoesSize10 = new Shoe(012, 'black').findShoes();
 
 
  /* Step 97
@@ -1429,8 +1429,8 @@ var blackShoesSize10 = new Shoe(0b1010, 'black').findShoes();
  * and assign the values to each variable below.
  *
  */
-var farTooTallAStory;
-var shortStory;
+var farTooTallAStory = new House(0b100000000).isATallStory(0b11111111);
+var shortStory = new House(0b1).isATallStory(0b11111111);
 
 
  /* Step 98
