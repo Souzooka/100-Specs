@@ -1008,6 +1008,11 @@
  *
  */
 
+ class Shape {
+    constructor(sides) {
+      this.sides = (sides < 3 || typeof sides !== 'number') ? null : sides;
+    }
+  }
 
 /**
  * Step 53
