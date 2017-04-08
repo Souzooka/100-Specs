@@ -65,7 +65,6 @@
 
   const earths_water_composition = 0.71;
 
-
 /* Step 8
  *
  * Declare a variable named "club_name"
@@ -73,6 +72,7 @@
  *
  */
 
+  const club_name = "Fight Club";
 
 /* Step 9
  *
