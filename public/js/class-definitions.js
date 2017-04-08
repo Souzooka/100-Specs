@@ -104,7 +104,7 @@
  */
 
   const princess_leia = {
-    name    : "Leia Organa",
+    name    : 'Leia Organa',
     money   : 890,
     age     : 20,
     gender  : gender.female
@@ -123,6 +123,12 @@
  *
  */
 
+  const domains = {
+    'ycombinator.com'                   : '198.41.190.47',
+    'laughingsquid.com'                 : '162.159.247.97',
+    'slumlordhosting.com'               : '198.61.179.126',
+    'jsonformatter.curiousconcept.com'  : '104.28.5.70'
+  };
 
 /* Step 12
  *
@@ -137,6 +143,7 @@
  *   Konqueror  => "konqueror.org"
  *
  */
+
 
 
 /* Step 13
