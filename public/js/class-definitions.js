@@ -329,6 +329,14 @@
  *
  */
 
+  function installLinux(flavor) {
+    for (let i in linuxFlavors) {
+      if (linuxFlavors[i] === flavor) {
+        return true;
+      }
+    }
+    return false;
+  }
 
 /* Step 23
  *
