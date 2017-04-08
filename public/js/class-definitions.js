@@ -356,6 +356,20 @@
  *
  */
 
+  function drink(beer) {
+    if (beers[beer] === undefined) {
+      return false;
+    } else {
+      if (beers[beer] instanceof Array) {
+        var result = `This ${beer} is ${beers[beer]}.`;
+        result = result.replace(/,/g, " and ");
+        return result;
+      } else {
+        return `This ${beer} is ${beers[beer]}.`;
+      }
+    }
+  }
+
 
 /* Step 24
  *
