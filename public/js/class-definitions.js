@@ -84,6 +84,11 @@
  *   unknown => undefined
  */
 
+  const gender = {
+    female : "female",
+    male : "male",
+    unknown : undefined
+  };
 
 /* Step 10
  *
