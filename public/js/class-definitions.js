@@ -1256,6 +1256,13 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+  Box.prototype.openBox = function() {
+    if (!this.isOpen) {
+      this.isOpen = true;
+      return true;
+    }
+    return false;
+  };
 
  /* Step 85
  *
