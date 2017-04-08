@@ -975,12 +975,12 @@
  * @param {string} gender  male or female
  */
 
- class Animal {
-  constructor(species, gender) {
-    this.species = species;
-    this.gender = gender;
+  class Animal {
+    constructor(species, gender) {
+      this.species = species;
+      this.gender = gender;
+    }
   }
- }
 
 
 /**
@@ -991,6 +991,12 @@
  * @param {string} model The vehicle's model
  */
 
+  class Vehicle {
+    constructor(make, model) {
+      this.make = make;
+      this.model = model;
+    }
+  }
 
 /**
  * Step 52
