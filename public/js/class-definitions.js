@@ -1050,6 +1050,12 @@
  * @param {string} color The shoe color
  */
 
+  class Shoe {
+    constructor(size, color) {
+      this.size = size;
+      this.color = color;
+    }
+  }
 
 /**
  * Step 56
