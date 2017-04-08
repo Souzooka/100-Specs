@@ -696,6 +696,15 @@
  *
  */
 
+  function Stapler(color, maxPapers) {
+    this.color = color;
+    this.maxPapers = maxPapers;
+  }
+
+  Stapler.prototype.staplePapers = function(paperNum) {
+    return paperNum <= this.maxPapers;
+  };
+
 
 /* Step 35
  *
