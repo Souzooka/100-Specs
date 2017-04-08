@@ -1297,6 +1297,9 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+  House.prototype.isATallStory = function(storiesTooTall) {
+    return this.stories >= storiesTooTall;
+  };
 
  /* Step 88
  *
