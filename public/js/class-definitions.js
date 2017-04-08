@@ -1342,6 +1342,19 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+  Meal.prototype.containsJunkFood = function() {
+    const junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
+    Object.freeze(junkFood);
+    for (let i = 0; i < this.foods.length; ++i) {
+      for (let j = 0; j < junkFood.length; ++j) {
+        if (junkFood[j] === this.foods[i]) {
+          return true;
+        }
+      }
+    }
+    return false;
+  };
+
 
  /* Steps 91 to 100
  *
