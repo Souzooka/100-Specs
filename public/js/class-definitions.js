@@ -1311,6 +1311,10 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+  Lightbulb.prototype.flipSwitch = function(str) {
+    this.isOn = (str === "on") ? true : false;
+    return this.isOn;
+  };
 
  /* Step 89
  *
@@ -1320,6 +1324,9 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+  Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
+    return (dayOfTheWeek === 'Monday' && this.flavor === 'chocolate');
+  };
 
  /* Step 90
  *
