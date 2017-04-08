@@ -515,6 +515,9 @@
  *
  */
 
+  function canTalkAbout(club) {
+    return club !== "Fight Club";
+  }
 
 /* Step 30
  *
