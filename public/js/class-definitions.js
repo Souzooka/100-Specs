@@ -33,6 +33,8 @@
  * Capitalize the names.
  */
 
+  const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+  const honoraryPlanets = ["Pluto"];
 
 /* Step 5
  *
