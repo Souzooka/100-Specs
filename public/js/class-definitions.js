@@ -575,6 +575,21 @@
  *
  */
 
+  function Garden(numPlants) {
+    this.plantsTotal = numPlants;
+    this.isWatered = false;
+  }
+
+  Garden.prototype.water = function() {
+    this.isWatered = true;
+  };
+
+  Garden.prototype.grow = function() {
+    if (this.isWatered) {
+      ++this.plantsTotal;
+    }
+    return this.isWatered;
+  }
 
 /* Step 32
  *
