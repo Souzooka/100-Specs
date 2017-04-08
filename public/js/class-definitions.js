@@ -1409,8 +1409,8 @@ var closeAnOpenBox = new Box(0x00, 0x01).openBox();
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
+var openAClosedDoor = new Door(0b0).openClose();
+var closeAnOpenDoor = new Door(01).openClose();
 
 
 /* Step 96
