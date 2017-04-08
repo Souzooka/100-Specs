@@ -745,7 +745,40 @@
  *
  */
 
+  function Scientist(name, money, age, gender) {
+    Person.call(this, name, money, age, gender);
+    this.disciplines = [];
+    this.discoveries = [];
+  }
 
+  Scientist.prototype = Object.create(Person.prototype);
+  Scientist.constructor = Scientist;
+
+  Scientist.prototype.addDiscipline = function(discipline) {
+    this.disciplines.push(discipline);
+    return discipline;
+  };
+
+  Scientist.prototype.checkDiscipline = function(discipline) {
+    return this.disciplines.indexOf(discipline) !== -1;
+  };
+
+  Scientist.prototype.addDiscovery = function(discovery) {
+    this.discoveries.push(discovery);
+    if (this.discoveries.length === 1) {
+      return `I discovered ${discovery}.`;
+    }
+    else if (this.discoveries.length === 2) {
+      return `I discovered ${this.discoveries[0]} and ${discovery}.`;
+    } else {
+      let result = "I discovered ";
+      for (let i = 0; i < this.discoveries.length - 1; ++i) {
+        result += this.discoveries[i] + ', ';
+      }
+      result += 'and ' + discovery + '.';
+      return result;
+    }
+  };
 /* Step 36
  *
  * Define an ES5 class named "BankAccount" that has properties
