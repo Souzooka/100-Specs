@@ -1312,6 +1312,7 @@ var dinner = new Meal(['fish', 'vegetables']);
  */
 
   Lightbulb.prototype.flipSwitch = function(str) {
+    console.log(str)
     this.isOn = (str === "on") ? true : false;
     return this.isOn;
   };
@@ -1439,8 +1440,9 @@ var shortStory = new House(0b1).isATallStory(0b11111111);
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+
+var kitchenLightsOn = new Lightbulb(false).flipSwitch("I turned the kitchen lights on".slice(28));
+var porchLightsOff = new Lightbulb(false).flipSwitch("I turned the kitchen lights on");
 
 
  /* Step 99
