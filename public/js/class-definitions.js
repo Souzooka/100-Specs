@@ -1355,7 +1355,6 @@ var dinner = new Meal(['fish', 'vegetables']);
     return false;
   };
 
-
  /* Steps 91 to 100
  *
  * Call methods
@@ -1369,9 +1368,9 @@ var dinner = new Meal(['fish', 'vegetables']);
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = new Animal("Monkey").isWarmBlooded();
+var coldBloodedAnimal = new Animal("Fish").isWarmBlooded();
+var notWarmOrColdAnimal = new Animal("Zebra").isWarmBlooded();
 
 
 /* Step 92
@@ -1380,8 +1379,8 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = new Vehicle("", "").drive("Woodlawn");
+var forwardDriving = new Vehicle("", "").drive();
 
 
  /* Step 93
