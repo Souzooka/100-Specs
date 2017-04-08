@@ -383,6 +383,12 @@
  *
  */
 
+  function browseURL(browser) {
+    if (browsers[browser] !== undefined) {
+      return browsers[browser];
+    }
+    return false;
+  }
 
 /* Step 25
  *
