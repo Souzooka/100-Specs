@@ -465,23 +465,20 @@
  *
  */
 
-  class Person {
-    constructor(name, money, age, gender) {
+    function Person(name, money, age, gender) {
       this.name = name;
       this.money = Number(money);
       this.age = Number(age);
       this.gender = gender;
     }
 
-    spendMoney(money) {
+    Person.prototype.spendMoney = function(money) {
       this.money -= money;
-    }
+    };
 
-    earnMoney(money) {
+    Person.prototype.earnMoney = function(money){
       this.money += money;
-    }
-
-  }
+    };
 
 /* Step 28
  *
@@ -653,6 +650,33 @@
  *
  */
 
+  // not saying that person has to be as es5 class kind of shot myself in the foot
+
+ function PrincessLeia(name, money, age, gender) {
+    Person.call(this, name, money, age, gender);
+    this.isInTrouble = null;
+  }
+
+  PrincessLeia.prototype = Object.create(Person.prototype);
+  PrincessLeia.constructor = PrincessLeia;
+
+  PrincessLeia.prototype.shootsGun = function() {
+    this.isInTrouble = false;
+    return 'Leia shoots her gun wildly';
+  };
+
+  PrincessLeia.prototype.getsInTrouble = function() {
+    this.isInTrouble = true;
+    return 'Help me Obi-wan Kenobi, you\'re my only hope';
+  };
+
+  PrincessLeia.prototype.marries = function(love) {
+    if (love === "Luke Skywalker") {
+      return "Gross!";
+    } else {
+      return love === "Han Solo";
+    }
+  };
 
 /* Step 34
  *
