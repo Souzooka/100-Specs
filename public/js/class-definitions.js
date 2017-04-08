@@ -1103,6 +1103,11 @@
  * @param {Array} foods All the foods in the meal
  */
 
+  class Meal {
+    constructor(foods) {
+      this.foods = foods;
+    }
+  }
 
 /**
  * Create a new instance of the Classes you defined above, below!
