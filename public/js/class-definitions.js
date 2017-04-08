@@ -779,6 +779,7 @@
       return result;
     }
   };
+
 /* Step 36
  *
  * Define an ES5 class named "BankAccount" that has properties
@@ -800,6 +801,7 @@
  *
  */
 
+ //
 
 /* Step 37
  *
@@ -972,6 +974,13 @@
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
+
+ class Animal {
+  constructor(species, gender) {
+    this.species = species;
+    this.gender = gender;
+  }
+ }
 
 
 /**
